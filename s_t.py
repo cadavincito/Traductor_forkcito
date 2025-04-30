@@ -53,17 +53,17 @@ st.markdown("""
         
         /* Contenedor del botón Bokeh */
         .bk-root .bk {
-            background-color: transparent !important;
+            background-color: #2D2D2D !important;
         }
         
         /* Canvas del botón */
         .bk-canvas {
-            background-color: transparent !important;
+            background-color: #2D2D2D !important;
         }
         
         /* Fondo del widget */
         .bk-widget {
-            background-color: transparent !important;
+            background-color: #2D2D2D !important;
         }
         
         /* Botones de Bokeh */
