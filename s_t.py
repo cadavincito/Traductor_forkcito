@@ -51,13 +51,37 @@ st.markdown("""
             border-right: 1px solid var(--border-color);
         }
         
+        /* Contenedor del botón Bokeh */
+        .bk-root .bk {
+            background-color: transparent !important;
+        }
+        
+        /* Canvas del botón */
+        .bk-canvas {
+            background-color: transparent !important;
+        }
+        
+        /* Fondo del widget */
+        .bk-widget {
+            background-color: transparent !important;
+        }
+        
         /* Botones de Bokeh */
         .bk-btn {
             background-color: var(--accent-color) !important;
             color: white !important;
-            border: 3px !important;
+            border: none !important;
             border-radius: 8px !important;
             font-size: 16px !important;
+            padding: 12px 24px !important;
+            transition: all 0.3s ease !important;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2) !important;
+        }
+        
+        .bk-btn:hover {
+            opacity: 0.9 !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3) !important;
         }
         
         /* Select boxes */
@@ -82,10 +106,17 @@ st.markdown("""
         audio {
             filter: invert(1) hue-rotate(180deg);
         }
+        
+        /* Mensajes de estado */
+        .stAlert {
+            background-color: var(--element-bg) !important;
+            border: 1px solid var(--border-color) !important;
+            border-radius: 8px !important;
+        }
     </style>
 """, unsafe_allow_html=True)
 
-st.title("🎤TRADUCTOR DE VOZ GPT🎤")
+st.title("🎤 TRADUCTOR DE VOZ GPT")
 st.subheader("Escucho lo que quieres traducir")
 
 # Mostrar imagen
