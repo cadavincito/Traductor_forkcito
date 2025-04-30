@@ -85,11 +85,11 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("🎤 TRADUCTOR DE VOZ")
+st.title("🎤TRADUCTOR DE VOZ GPT🎤")
 st.subheader("Escucho lo que quieres traducir")
 
 # Mostrar imagen
-image = Image.open('OIG7.jpg')
+image = Image.open('img.jpg')
 st.image(image, width=300)
 
 with st.sidebar:
